@@ -1,0 +1,193 @@
+.experience {
+  padding: 120px 0;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timelineTrack {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--border), var(--border), transparent);
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timelineItem {
+  position: relative;
+  display: flex;
+  width: 50%;
+  margin-bottom: 48px;
+}
+
+.left {
+  left: 0;
+  padding-right: 48px;
+  justify-content: flex-end;
+}
+
+.right {
+  left: 50%;
+  padding-left: 48px;
+  justify-content: flex-start;
+}
+
+/* Dot */
+.timelineDot {
+  position: absolute;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid;
+  background: var(--bg-primary);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timelineDot span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.left .timelineDot {
+  right: -7px;
+}
+
+.right .timelineDot {
+  left: -7px;
+}
+
+/* Card */
+.expCard {
+  padding: 28px;
+  max-width: 420px;
+  width: 100%;
+  transition: all var(--transition);
+}
+
+.expCard:hover {
+  transform: translateY(-4px);
+}
+
+.expCardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.expBadge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+}
+
+.expId {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.06);
+}
+
+.expTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.expCompany {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.expMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+/* Bullets */
+.expBullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.expBullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.bulletDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.expTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timelineTrack {
+    left: 20px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 56px;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .timelineDot {
+    right: auto !important;
+    left: 13px !important;
+  }
+
+  .expCard {
+    max-width: 100%;
+  }
+}

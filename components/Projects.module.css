@@ -1,0 +1,319 @@
+.projects {
+  padding: 88px 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.title {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.05;
+}
+
+.titleAccent {
+  font-style: italic;
+  color: var(--purple-light);
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+  gap: 40px;
+  align-items: start;
+}
+
+.projectsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 0.55;
+  transition: opacity var(--transition-slow);
+}
+
+.projectActive {
+  opacity: 1;
+}
+
+.projectMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.metaText {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.projectDate {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.projectTitle {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.05;
+}
+
+.previewCard {
+  display: block;
+  border-radius: 20px;
+  padding: 24px 24px 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.previewCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.cardHeading {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.45;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.previewFrame {
+  position: relative;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: none;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.previewImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  max-height: 300px;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 8px;
+}
+
+.techTag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.detailPanel {
+  position: sticky;
+  top: 110px;
+}
+
+.detailInner {
+  padding: 8px 0 8px 20px;
+  border-left: 1px solid var(--border);
+}
+
+.detailAccent {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: var(--radius-full);
+  margin-bottom: 18px;
+}
+
+.detailTitle {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+
+.detailDesc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.featureIcon {
+  flex-shrink: 0;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.detailLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: gap var(--transition);
+}
+
+.detailLink:hover {
+  gap: 10px;
+}
+
+.mobileDetails {
+  display: none;
+}
+
+.viewMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.viewMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  background: transparent;
+}
+
+.viewMoreBtn:hover {
+  border-color: var(--purple);
+  color: var(--purple-light);
+  background: rgba(139, 92, 246, 0.06);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .showcase {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .detailPanel {
+    display: none;
+  }
+
+  .mobileDetails {
+    display: block;
+    padding-top: 4px;
+  }
+
+  .project {
+    opacity: 1;
+  }
+
+  .projectsColumn {
+    gap: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 64px 0;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .previewCard {
+    padding: 18px 18px 0;
+    border-radius: 16px;
+  }
+
+  .previewImage {
+    max-height: 220px;
+  }
+
+  .techGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .projectTitle {
+    font-size: 1.6rem;
+  }
+
+  .previewImage {
+    max-height: 180px;
+  }
+}
