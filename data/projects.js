@@ -99,6 +99,7 @@ export const projects = [
     date: "Q3 2025",
   },
 
+  // PORTFOLIO WEBSITE
 
   {
     title: "Portfolio",
@@ -113,9 +114,9 @@ export const projects = [
       "Fully responsive design",
     ],
     tech: ["Next.js", "React", "Tailwind", "TypeScript"],
-    link: "/",
-    image: "/pawan.jpg",
-    accentColor: "#10b981",
+    link: "https://pawan-portfolio-flax.vercel.app/",
+    image: "/portfolio-website.jpg",
+    accentColor: "#9165f7",
     cardGradient:
       "linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(15, 15, 26, 0.95) 55%, rgba(9, 9, 15, 1) 100%)",
     category: "Web App",
